@@ -1,5 +1,6 @@
 .heading-primary {
   font-size: 6.5rem;
+  font-weight: 700;
   text-transform: uppercase;
 
   &--1 {
@@ -8,4 +9,11 @@
   &--2 {
     display: block;
   }
+}
+
+.heading-secondary {
+  font-size: 6.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: $color-red-1;
 }
