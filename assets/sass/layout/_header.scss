@@ -1,0 +1,51 @@
+.header {
+  background-color: #fc393a;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+
+  &__social-nav {
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  &__social-menu {
+    list-style: none;
+  }
+
+  &__social-item {
+    display: inline-block;
+    padding: 1rem;
+  }
+
+  &__social-icon {
+    font-size: 1.8rem;
+  }
+
+  &__social-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  &__logo-box {
+    width: 60rem;
+    position: absolute;
+    top: -9rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  &__logo {
+    width: 100%;
+  }
+
+  &__text-box {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+  }
+}
