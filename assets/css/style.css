@@ -50,9 +50,119 @@ body {
   text-align: center;
   color: #fc393a; }
 
+.first-number {
+  font-size: 6rem;
+  align-self: start;
+  margin-top: -1.8rem; }
+
+.u-margin-bottom-big {
+  margin-bottom: 6rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
 /*==================================================
 COMPONENTS
 ==================================================*/
+.menu {
+  position: absolute;
+  width: 2rem;
+  top: 15%;
+  left: 0; }
+  .menu__navigation {
+    list-style: none; }
+  .menu__item {
+    display: block;
+    margin-bottom: 0.5rem;
+    background-color: #000;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .menu__link {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer; }
+  .menu__showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .menu__image-box {
+    flex: 0 0 23%;
+    overflow: hidden;
+    margin-right: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .menu__image {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 2rem;
+    transition: all 0.2s;
+    border: 3px solid transparent;
+    cursor: pointer; }
+  .menu__image--active {
+    border: 3px solid #fc393a; }
+  .menu__item-name {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px; }
+  .menu__item-price {
+    color: #fc393a;
+    font-size: 3rem;
+    font-weight: 700; }
+  .menu__bottom {
+    display: flex;
+    justify-content: space-between; }
+  .menu__order-box {
+    background-color: #fc393a;
+    margin-left: 15%;
+    height: 3rem;
+    padding: 2.2rem 1rem 2.2rem 3px;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem; }
+  .menu__order {
+    text-decoration: none;
+    color: #fc393a;
+    background-color: #fff;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px; }
+  .menu__order-arrow {
+    color: #fff;
+    font-size: 2.4rem;
+    margin-left: 1rem; }
+  .menu__car-box {
+    width: 50rem;
+    margin-top: -8rem; }
+  .menu__car {
+    width: 100%; }
+
+.location {
+  width: 80%;
+  margin: 0 auto;
+  display: flex; }
+  .location__details {
+    margin-right: 10rem;
+    margin-bottom: 8rem; }
+  .location__heading {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700; }
+  .location__address {
+    font-size: 1.3rem; }
+
 /*==================================================
 LAYOUT
 ==================================================*/
@@ -99,7 +209,8 @@ LAYOUT
     display: flex;
     align-items: center;
     padding-left: 2rem;
-    padding-right: 3rem; }
+    padding-right: 3rem;
+    cursor: pointer; }
   .header__order-link {
     display: inline-block;
     text-decoration: none;
@@ -117,4 +228,23 @@ LAYOUT
 PAGES
 ==================================================*/
 .section-menu {
-  background-color: #d6c6ac; }
+  padding: 10rem 0;
+  padding-bottom: 5rem;
+  background-color: #fefaf6;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%, 45% 70%, 0 70%); }
+
+.section-locations {
+  position: relative;
+  margin-top: -35rem; }
+  .section-locations h2 {
+    text-align: left;
+    margin-left: 20%; }
+
+.section-restaurant {
+  background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url("/assets/img/restaurant.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 70rem; }
