@@ -1,7 +1,7 @@
 .menu {
   position: absolute;
   width: 2rem;
-  top: 15%;
+  top: 10%;
   left: 0;
 
   &__navigation {
@@ -16,6 +16,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+  }
+
+  &__item--active {
+    background-color: $color-red-1;
   }
 
   &__link {

@@ -70,7 +70,7 @@ COMPONENTS
 .menu {
   position: absolute;
   width: 2rem;
-  top: 15%;
+  top: 10%;
   left: 0; }
   .menu__navigation {
     list-style: none; }
@@ -81,7 +81,10 @@ COMPONENTS
     padding: 2rem;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    cursor: pointer; }
+  .menu__item--active {
+    background-color: #fc393a; }
   .menu__link {
     text-decoration: none;
     text-align: center;
@@ -162,6 +165,48 @@ COMPONENTS
     font-weight: 700; }
   .location__address {
     font-size: 1.3rem; }
+
+.introduction {
+  display: flex;
+  justify-content: space-between; }
+  .introduction__image-box {
+    flex: 0 0 60%;
+    position: relative;
+    overflow: hidden; }
+  .introduction__image-box--1::before {
+    content: '';
+    width: 80%;
+    height: 70%;
+    display: table;
+    background-color: #d6c6ac;
+    position: absolute;
+    top: -10rem;
+    left: -10rem;
+    opacity: 0.2; }
+  .introduction__image-box--2 {
+    flex: 0 0 50%; }
+  .introduction__image {
+    width: 100%; }
+  .introduction__details {
+    flex: 0 0 35%;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column; }
+  .introduction__details--2 {
+    margin-left: auto;
+    margin-top: 6rem;
+    margin-right: 4rem; }
+  .introduction__heading {
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.3; }
+  .introduction__story--main {
+    font-size: 1.6rem;
+    font-weight: 300; }
+  .introduction__story--sub {
+    font-size: 1.2rem;
+    font-weight: 300; }
 
 /*==================================================
 LAYOUT

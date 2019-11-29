@@ -1,0 +1,60 @@
+.introduction {
+  display: flex;
+  justify-content: space-between;
+
+  &__image-box {
+    flex: 0 0 60%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__image-box--1::before {
+    content: '';
+    width: 80%;
+    height: 70%;
+    display: table;
+    background-color: $color-brown-light-2;
+    position: absolute;
+    top: -10rem;
+    left: -10rem;
+    opacity: 0.2;
+  }
+
+  &__image-box--2 {
+    flex: 0 0 50%;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__details {
+    flex: 0 0 35%;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__details--2 {
+    margin-left: auto;
+    margin-top: 6rem;
+    margin-right: 4rem;
+  }
+
+  &__heading {
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  &__story--main {
+    font-size: 1.6rem;
+    font-weight: 300;
+  }
+
+  &__story--sub {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+}
