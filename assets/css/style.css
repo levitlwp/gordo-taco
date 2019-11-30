@@ -184,7 +184,10 @@ COMPONENTS
     left: -10rem;
     opacity: 0.2; }
   .introduction__image-box--2 {
-    flex: 0 0 50%; }
+    flex: 0 0 50%;
+    filter: grayscale(90%);
+    z-index: -1;
+    position: relative; }
   .introduction__image {
     width: 100%; }
   .introduction__details {
@@ -207,6 +210,66 @@ COMPONENTS
   .introduction__story--sub {
     font-size: 1.2rem;
     font-weight: 300; }
+  .introduction__statistics {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem; }
+  .introduction__stat {
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 9rem;
+    position: relative; }
+  .introduction__year::before {
+    content: "'77";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -10rem;
+    transform: translateX(-50%);
+    color: #fc393a;
+    font-size: 12rem;
+    z-index: -1; }
+  .introduction__locations::before {
+    content: '6';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -10rem;
+    transform: translateX(-50%);
+    color: #fc393a;
+    font-size: 12rem;
+    z-index: -1; }
+  .introduction__bellies::before {
+    content: '85k';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -10rem;
+    transform: translateX(-50%);
+    color: #fc393a;
+    font-size: 12rem;
+    z-index: 2; }
+  .introduction__bellies::before {
+    content: '85k';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -10rem;
+    transform: translateX(-50%);
+    color: #fc393a;
+    font-size: 12rem;
+    z-index: -1; }
+  .introduction__salads::before {
+    content: '0';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -10rem;
+    transform: translateX(-50%);
+    color: #fc393a;
+    font-size: 12rem;
+    z-index: -1; }
 
 /*==================================================
 LAYOUT
@@ -289,7 +352,8 @@ PAGES
     margin-left: 20%; }
 
 .section-restaurant {
-  background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url("/assets/img/restaurant.jpg");
+  margin-top: 12rem;
+  background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5)), url("/assets/img/banner.jpg");
   background-size: cover;
   background-position: center;
   height: 70rem; }
